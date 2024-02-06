@@ -53,6 +53,15 @@ PISA_df.head()
 PISA_df.isnull().sum()
 ```
 
+```python
+data = './2009pisalarge.csv'
+USA09 = pd.read_csv(data)
+
+USA09.tail()
+USA09.shape
+USA09.isna().sum()
+```
+
 ### Exploratory Data Analysis
 
 EDA involved in exploring U.S. and Global PISA Scores
