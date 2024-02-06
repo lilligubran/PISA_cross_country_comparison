@@ -37,6 +37,22 @@ In the intial data preperation phase, we performed the following tasks:
 2. Handling null values
 3. Data cleaning and formatting
 
+```sql
+SELECT *
+FROM capstonesetwithglobalschoolinfo
+JOIN PISAMeanPerformanceScores2015 ON capstonesetwithglobalschoolinfo.CNT = PISAMeanPerformanceScores2015.Country_Code
+```
+
+```python
+import pandas as pd
+
+PISA_df = pd.read_csv("./PISAjoinedGlobalinfo.csv", low_memory=False)
+
+PISA_df.head()
+
+PISA_df.isnull().sum()
+```
+
 ### Exploratory Data Analysis
 
 EDA involved in exploring U.S. and Global PISA Scores
