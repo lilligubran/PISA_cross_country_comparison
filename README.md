@@ -37,7 +37,7 @@ In the intial data preperation phase, we performed the following tasks:
 2. Handling null values
 3. Data cleaning and formatting
 
-I used SQL to join the 2 major data sets using Country Code. I uploaded the joined table into Tableau for further analysis. 
+I used SQL to join the 2 major data sets using Country Code. I uploaded the joined, cleaned table into Tableau for further analysis. 
 ```sql
 SELECT *
 FROM capstonesetwithglobalschoolinfo
