@@ -44,7 +44,7 @@ FROM capstonesetwithglobalschoolinfo
 JOIN PISAMeanPerformanceScores2015 ON capstonesetwithglobalschoolinfo.CNT = PISAMeanPerformanceScores2015.Country_Code
 ```
 
-I prefer Python for intial data cleaning and identifying null values. 
+I used pandas library in Python for intial data cleaning and identifying null values. 
 ```python
 import pandas as pd
 
