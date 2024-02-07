@@ -37,12 +37,14 @@ In the intial data preperation phase, we performed the following tasks:
 2. Handling null values
 3. Data cleaning and formatting
 
+I used SQL to join the 2 major data sets using Country Code. I uploaded the joined table into Tableau for further analysis. 
 ```sql
 SELECT *
 FROM capstonesetwithglobalschoolinfo
 JOIN PISAMeanPerformanceScores2015 ON capstonesetwithglobalschoolinfo.CNT = PISAMeanPerformanceScores2015.Country_Code
 ```
 
+I prefer Python for intial data cleaning and identifying null values. 
 ```python
 import pandas as pd
 
